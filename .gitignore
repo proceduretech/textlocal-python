@@ -103,3 +103,7 @@ ENV/
 
 # vscode
 .vscode/
+
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/*

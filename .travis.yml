@@ -5,14 +5,3 @@ python:
 - 3.4
 install: pip install -U tox-travis
 script: tox
-deploy:
-  provider: pypi
-  distributions: sdist bdist_wheel
-  user: makarand-mac
-  password:
-    secure: sBbB0J2W+ujDkZxzEVoZevWov4SiIUgT02Pnm4j1tCHu3Ki3wc1n2yCVjKeM51dnWJBHn2v9cZ6DkCFhP5bE3lIrOTpRyCXON1w/ctX0oMUW5CCTAk47N6pWHauzYXSDCWrRMiLGwmP9hUKWYR0yoDWnlApMoswnv0+MqhIcc59u6QapojIcnu6aqBY06jX6NZQnINS696/dD7ar79OBqoo7EcZy6CKcMTMIZ6CMra74VHgaGjzJk0O3nIV4j0tH17o3ckix7yY+Jt3pH0Z79ROYtkRntgDZAMLiFMuEPX1IcmP7Eq+nECjpiGNyWFTCysDTl+bPFmHGIpXX6I1UOz968FYfLtEkEyBaE5/ef0lt1zyj0QtmnpjThPmEXQ3Td024YKKoc2fTXYz8fyN+4VnBd27cOM3KcizMrEDeRDqan8gLhHApJvxH7OKadS5nfbtYgNCyqJAlTxkv8xP8v7QcyaPpuRge7pvCAH4K1X1hBOKBfWFvx1vDlGpSbUOck4ceHy6Mgu46CHFaIvnT6SQ8Pccy31pKOQqLV0m60tNVvy7w2O2gTfITq1MrzKIgKbIbzsEnNyEF/tnDMwr4lM7hMQ0syJUlD6vkn6pnzy3OipuDTGiYIbefdgCvUenKb/n6qZ6hM+XKd7s2G0NddaxAbUTVTftLKAw3AxlIFf4=
-  on:
-    branch: master
-    tags: true
-    repo: the-procedure/textlocal-python
-    python: 3.6

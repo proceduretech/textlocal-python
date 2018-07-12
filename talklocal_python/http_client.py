@@ -8,6 +8,14 @@ import json
 
 def send_http_request(url, data, method, headers={}):
     "Sends http request"
+
+    if not isinstance(data, dict):
+        logging.error('Data parameter should be of type dict')
+        return
+
+    if not isinstance(headers, dict):
+        logging.error('headers parameter should be of type dict')
+        return
     
     if REQUEST_IMPORT:
         client = RequestClient()
@@ -69,7 +77,7 @@ class UrllibClient(object):
     def request(self, url, data, method, headers={}):
         'Sends http request'
 
-        if method not in ('get', 'post')
+        if method not in ('get', 'post'):
             logging.error('Invalid method type')
             return
 

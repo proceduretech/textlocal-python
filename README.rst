@@ -4,7 +4,7 @@ TextLocal Python
 
 
 .. image:: https://img.shields.io/pypi/v/textlocal-python.svg
-        :target: https://pypi.python.org/pypi/textlocal-python
+        :target: https://pypi.python.org/pypi/textlocal-pro
 
 .. image:: https://img.shields.io/travis/the-procedure/textlocal-python.svg
         :target: https://travis-ci.org/the-procedure/textlocal-python

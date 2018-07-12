@@ -1,4 +1,4 @@
-Welcome to TalkLocal Python's documentation!
+Welcome to TextLocal Python's documentation!
 ======================================
 
 .. toctree::

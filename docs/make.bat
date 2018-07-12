@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=talklocal_python
+set SPHINXPROJ=textlocal_python
 
 if "%1" == "" goto help
 

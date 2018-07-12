@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = python -msphinx
-SPHINXPROJ    = talklocal_python
+SPHINXPROJ    = textlocal_python
 SOURCEDIR     = .
 BUILDDIR      = _build
 

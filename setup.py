@@ -19,7 +19,7 @@ test_requirements = [ ]
 
 setup(
     author="Makarand Deshpande",
-    author_email='makarand_deshpande@outlook.com',
+    author_email='makarand@theprocedure.in',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -32,18 +32,18 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    description="TalkLocal REST API Implementation in Python",
+    description="TextLocal REST API Implementation in Python",
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
-    keywords='talklocal_python',
-    name='talklocal_python',
-    packages=find_packages(include=['talklocal_python']),
+    keywords='textlocal',
+    name='textlocal',
+    packages=find_packages(include=['textlocal']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/makarand-mac/talklocal_python',
+    url='https://github.com/the-procedure/textlocal_python',
     version='0.1.0',
     zip_safe=False,
 )

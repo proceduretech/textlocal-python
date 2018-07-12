@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use TalkLocal Python in a project::
+To use TextLocal Python in a project::
 
-    import talklocal_python
+    import textlocal_python

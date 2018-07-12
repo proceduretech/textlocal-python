@@ -21,7 +21,7 @@ setup(
     author="Makarand Deshpande",
     author_email='makarand_deshpande@outlook.com',
     classifiers=[
-        'Development Status :: Alpha',
+        'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
@@ -41,6 +41,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/the-procedure/textlocal_python',
-    version='0.2.6',
+    version='0.2.4',
     zip_safe=False,
 )

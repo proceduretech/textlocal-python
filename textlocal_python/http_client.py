@@ -51,7 +51,7 @@ class RequestClient(object):
 
         try:
             if method is 'post':
-                response = requests.post(url, data=json.dumps(data), headers=headers)
+                response = requests.post(url, data=data, headers=headers)
             elif method is 'get':
                 response = requests.get(url, params=data, headers=headers)
             
@@ -80,10 +80,13 @@ class UrllibClient(object):
             logging.error('Invalid method type')
             return
 
-        req = urllib.request.Request(url, data, headers, method=method)
+        data = urllib.parse.urlencode(data)
+        data = data.encode('utf-8')
+
+        req = urllib.request.Request(url, headers=headers, method=method)
 
         try:
-            response = urllib.request.urlopen(req)
+            response = urllib.request.urlopen(req, data)
             rbody = response.read()
             rcode = response.code
 

@@ -19,7 +19,7 @@ test_requirements = [ ]
 
 setup(
     author="Makarand Deshpande",
-    author_email='makarand_deshpande@outlook.com',
+    author_email='makarand@theprocedure.in',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -43,7 +43,7 @@ setup(
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/makarand-mac/talklocal_python',
+    url='https://github.com/the-procedure/talklocal_python',
     version='0.1.0',
     zip_safe=False,
 )

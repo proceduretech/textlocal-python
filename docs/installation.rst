@@ -32,13 +32,13 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/makarand-mac/talklocal_python
+    $ git clone git://github.com/the-proceduretalklocal_python
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/makarand-mac/talklocal_python/tarball/master
+    $ curl  -OL https://github.com/the-procedure/talklocal_python/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/makarand-mac/talklocal_python
-.. _tarball: https://github.com/makarand-mac/talklocal_python/tarball/master
+.. _Github repo: https://github.com/the-procedure/talklocal_python
+.. _tarball: https://github.com/the-procedure/talklocal_python/tarball/master

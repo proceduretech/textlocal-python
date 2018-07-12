@@ -6,8 +6,8 @@ TalkLocal Python
 .. image:: https://img.shields.io/pypi/v/talklocal_python.svg
         :target: https://pypi.python.org/pypi/talklocal_python
 
-.. image:: https://img.shields.io/travis/makarand-mac/talklocal_python.svg
-        :target: https://travis-ci.org/makarand-mac/talklocal_python
+.. image:: https://img.shields.io/travis/the-procedure/talklocal_python.svg
+        :target: https://travis-ci.org/the-procedure/talklocal_python
 
 .. image:: https://readthedocs.org/projects/talklocal-python/badge/?version=latest
         :target: https://talklocal-python.readthedocs.io/en/latest/?badge=latest

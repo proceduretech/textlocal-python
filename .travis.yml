@@ -25,5 +25,5 @@ deploy:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: makarand-mac/talklocal_python
+    repo: makarand-mac/talklocal-python
     python: 3.6

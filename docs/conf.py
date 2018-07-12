@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'TalkLocal Python'
-copyright = u"2018, Makarand Deshpande"
+copyright = u"2018,  The Procedure Technologies Pvt Ltd"
 author = u"Makarand Deshpande"
 
 # The version info for the project you're documenting, acts as replacement

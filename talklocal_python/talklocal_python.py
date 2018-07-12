@@ -2,7 +2,7 @@
 
 """Talk Local Main module."""
 
-from http_client import send_http_request
+from  talklocal_python.http_client import send_http_request
 
 
 class TalkLocalClient():

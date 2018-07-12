@@ -64,9 +64,9 @@ class RequestClient(object):
     def handle_request_error(self, url_exe):
         """Handles http url error"""
 
-        msg = 'Unexpected error communicating with TalkLocal.' + \
+        msg = 'Unexpected error communicating with TextLocal.' + \
         'If this problem persists' + \
-        ', let us know at https://github.com/the-procedure/talklocal_python/issues'
+        ', let us know at https://github.com/the-procedure/textlocal_python/issues'
         logging.error(msg)
 
 
@@ -104,7 +104,7 @@ class UrllibClient(object):
     def handle_request_error(self, url_exe):
         """Handles http url error"""
 
-        msg = 'Unexpected error communicating with TalkLocal.' + \
+        msg = 'Unexpected error communicating with TextLocal.' + \
         'If this problem persists' + \
-        ', let us know at https://github.com/the-procedure/talklocal_python/issues'
+        ', let us know at https://github.com/the-procedure/textlocal_python/issues'
         logging.error(msg)

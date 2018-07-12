@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-"""Talk Local Main module."""
+"""Text Local Main module."""
 
-from  talklocal_python.http_client import send_http_request
+from  textlocal_python.http_client import send_http_request
 
 
-class TalkLocalClient():
-    """Talk Local Client Class"""
+class TextLocalClient():
+    """Text Local Client Class"""
 
     sendAPI = 'https://api.textlocal.in/send/'
     getGroupsAPI = 'https://api.textlocal.in/get_groups/'
@@ -18,7 +18,7 @@ class TalkLocalClient():
         self.apikey = apikey
 
     def send_message(self, numbers, message, sender=None, test=False):
-        """Sends messages using Talk Local, Numbers can be comma separated"""
+        """Sends messages using Text Local, Numbers can be comma separated"""
 
         params = {'apikey': self.apikey, 'numbers': numbers, 'message': message}
 
@@ -45,19 +45,19 @@ class TalkLocalClient():
         return send_http_request(self.sendAPI, params, 'post')
 
     def get_scheduled_messages(self):
-        """Gets Scheduled messages on Talk Local"""
+        """Gets Scheduled messages on Text Local"""
 
         params = {'apikey': self.apikey}
         return send_http_request(self.get_scheduled_messages, params, 'post')
 
     def cancel_scheduled_messages(self, sent_id):
-        """Cancels Scheduled messages on Talk Local"""
+        """Cancels Scheduled messages on Text Local"""
 
         params = {'apikey': self.apikey, 'sent_id': sent_id}
         return send_http_request(self.cancel_scheduled_messages, params, 'post')
 
     def get_groups(self):
-        """Gets Groups on Talk Local"""
+        """Gets Groups on Text Local"""
 
         params = {'apikey': self.apikey}
         return send_http_request(self.getGroupsAPI, params, 'post')

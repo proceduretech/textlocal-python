@@ -66,7 +66,7 @@ class RequestClient(object):
 
         msg = 'Unexpected error communicating with TalkLocal.' + \
         'If this problem persists' + \
-        ', let us know at https://github.com/makarand-mac/talklocal_python/issues'
+        ', let us know at https://github.com/the-procedure/talklocal_python/issues'
         logging.error(msg)
 
 
@@ -106,5 +106,5 @@ class UrllibClient(object):
 
         msg = 'Unexpected error communicating with TalkLocal.' + \
         'If this problem persists' + \
-        ', let us know at https://github.com/makarand-mac/talklocal_python/issues'
+        ', let us know at https://github.com/the-procedure/talklocal_python/issues'
         logging.error(msg)

@@ -19,7 +19,7 @@ test_requirements = [ ]
 
 setup(
     author="Makarand Deshpande",
-    author_email='makarand@theprocedure.in',
+    author_email='makarand_deshpande@outlook.com',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

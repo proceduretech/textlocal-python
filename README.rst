@@ -3,11 +3,11 @@ TextLocal Python
 ================
 
 
-.. image:: https://img.shields.io/pypi/v/textlocal_python.svg
-        :target: https://pypi.python.org/pypi/textlocal_python
+.. image:: https://img.shields.io/pypi/v/textlocal-python.svg
+        :target: https://pypi.python.org/pypi/textlocal-python
 
-.. image:: https://img.shields.io/travis/the-procedure/textlocal_python.svg
-        :target: https://travis-ci.org/the-procedure/textlocal_python
+.. image:: https://img.shields.io/travis/the-procedure/textlocal-python.svg
+        :target: https://travis-ci.org/the-procedure/textlocal-python
 
 .. image:: https://readthedocs.org/projects/textlocal-python/badge/?version=latest
         :target: https://textlocal-python.readthedocs.io/en/latest/?badge=latest

@@ -6,25 +6,6 @@ import logging
 import json
 
 
-def send_http_request(url, data, method, headers={}):
-    "Sends http request"
-
-    if not isinstance(data, dict):
-        logging.error('Data parameter should be of type dict')
-        return
-
-    if not isinstance(headers, dict):
-        logging.error('headers parameter should be of type dict')
-        return
-    
-    if REQUEST_IMPORT:
-        client = RequestClient()
-    else:
-        client = UrllibClient()
-    
-    return client.request(url, data, method, headers)
-
-
 try:
     import requests
 except ImportError:
@@ -36,8 +17,26 @@ else:
     major, minor, patch = [int(i) for i in version.split('.')]
 
 
+def send_http_request(url, data, method, headers={}):
+    """Sends http request"""
+
+    if not isinstance(data, dict):
+        logging.error('Data parameter should be of type dict')
+        return
+
+    if not isinstance(headers, dict):
+        logging.error('headers parameter should be of type dict')
+        return
+
+    if REQUEST_IMPORT:
+        client = RequestClient()
+    else:
+        client = UrllibClient()
+
+    return client.request(url, data, method, headers)
+
 class RequestClient(object):
-    "Request HTTP Client"
+    """Request HTTP Client"""
 
     def request(self, url, data, method, headers={} ):
         'Sends HTTP Request through Request Library'
@@ -63,7 +62,7 @@ class RequestClient(object):
 
 
     def handle_request_error(self, url_exe):
-        'Handles http url error'
+        """Handles http url error"""
 
         msg = 'Unexpected error communicating with TalkLocal.' + \
         'If this problem persists' + \
@@ -72,7 +71,7 @@ class RequestClient(object):
 
 
 class UrllibClient(object):
-    "Urllib HTTP Client"
+    """Urllib HTTP Client"""
 
     def request(self, url, data, method, headers={}):
         'Sends http request'
@@ -103,7 +102,7 @@ class UrllibClient(object):
             self.handle_request_error(url_exe)
 
     def handle_request_error(self, url_exe):
-        'Handles http url error'
+        """Handles http url error"""
 
         msg = 'Unexpected error communicating with TalkLocal.' + \
         'If this problem persists' + \

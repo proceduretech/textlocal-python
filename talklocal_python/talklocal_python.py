@@ -6,7 +6,7 @@ from http_client import send_http_request
 
 
 class TalkLocalClient():
-    "Talk Local Client Class"
+    """Talk Local Client Class"""
 
     sendAPI = 'https://api.textlocal.in/send/'
     getGroupsAPI = 'https://api.textlocal.in/get_groups/'
@@ -18,7 +18,7 @@ class TalkLocalClient():
         self.apikey = apikey
 
     def send_message(self, numbers, message, sender=None, test=False):
-        'Sends messages using Talk Local, Numbers can be comma separated'
+        """Sends messages using Talk Local, Numbers can be comma separated"""
 
         params = {'apikey': self.apikey, 'numbers': numbers, 'message': message}
 
@@ -31,7 +31,7 @@ class TalkLocalClient():
         return send_http_request(self.sendAPI, params, 'post')
 
     def schedule_message(self, numbers, message, timestamp, sender=None, test=False):
-        'Schedules messages'
+        """Schedules messages"""
 
         params = {'apikey': self.apikey, 'numbers': numbers, \
         'message': message, 'timestamp': timestamp}
@@ -45,25 +45,25 @@ class TalkLocalClient():
         return send_http_request(self.sendAPI, params, 'post')
 
     def get_scheduled_messages(self):
-        'Gets Scheduled messages on Talk Local'
+        """Gets Scheduled messages on Talk Local"""
 
         params = {'apikey': self.apikey}
         return send_http_request(self.get_scheduled_messages, params, 'post')
 
     def cancel_scheduled_messages(self, sent_id):
-        'Cancels Scheduled messages on Talk Local'
+        """Cancels Scheduled messages on Talk Local"""
 
         params = {'apikey': self.apikey, 'sent_id': sent_id}
         return send_http_request(self.cancel_scheduled_messages, params, 'post')
 
     def get_groups(self):
-        'Gets Groups on Talk Local'
+        """Gets Groups on Talk Local"""
 
         params = {'apikey': self.apikey}
         return send_http_request(self.getGroupsAPI, params, 'post')
 
     def get_cost(self, numbers, message, sender=None):
-        'Gets cost of particular message or messages'
+        """Gets cost of particular message or messages"""
 
         response, code, headers = self.send_message(numbers, message, sender, True)
         if response['status'] is 'success':
@@ -72,7 +72,7 @@ class TalkLocalClient():
         return response, code, headers
 
     def create_short_url(self, url):
-        'Creates short url'
+        """Creates short url"""
 
         params = {'apikey': self.apikey, 'url': url}
         return send_http_request(self.shortUrlAPI, params, 'post')

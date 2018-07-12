@@ -1,4 +1,4 @@
-* TalkLocal Python version:
+* TextLocal Python version:
 * Python version:
 * Operating System:
 

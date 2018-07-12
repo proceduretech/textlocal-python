@@ -1,26 +1,26 @@
 ================
-TalkLocal Python
+TextLocal Python
 ================
 
 
-.. image:: https://img.shields.io/pypi/v/talklocal_python.svg
-        :target: https://pypi.python.org/pypi/talklocal_python
+.. image:: https://img.shields.io/pypi/v/textlocal_python.svg
+        :target: https://pypi.python.org/pypi/textlocal_python
 
-.. image:: https://img.shields.io/travis/the-procedure/talklocal_python.svg
-        :target: https://travis-ci.org/the-procedure/talklocal_python
+.. image:: https://img.shields.io/travis/the-procedure/textlocal_python.svg
+        :target: https://travis-ci.org/the-procedure/textlocal_python
 
-.. image:: https://readthedocs.org/projects/talklocal-python/badge/?version=latest
-        :target: https://talklocal-python.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/textlocal-python/badge/?version=latest
+        :target: https://textlocal-python.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
 
 
-TalkLocal REST API Implementation in Python
+TextLocal REST API Implementation in Python
 
 
 * Free software: MIT license
-* Documentation: https://talklocal-python.readthedocs.io.
+* Documentation: https://textlocal-python.readthedocs.io.
 
 
 Features

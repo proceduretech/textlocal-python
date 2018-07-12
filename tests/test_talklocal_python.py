@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Tests for `talklocal_python` package."""
+"""Tests for `textlocal_python` package."""
 
 
 import unittest
 
-from talklocal_python import talklocal_python
+from textlocal_python import textlocal_python
 
 
-class TestTalklocal_python(unittest.TestCase):
-    """Tests for `talklocal_python` package."""
+class TestTextlocal_python(unittest.TestCase):
+    """Tests for `textlocal_python` package."""
 
     def setUp(self):
         """Set up test fixtures, if any."""

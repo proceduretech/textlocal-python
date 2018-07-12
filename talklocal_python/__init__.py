@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Top-level package for TalkLocal Python."""
+"""Top-level package for TextLocal Python."""
 
 __author__ = """Makarand Deshpande"""
 __email__ = 'makarand@theprocedure.in'

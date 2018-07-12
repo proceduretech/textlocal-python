@@ -8,13 +8,13 @@ Installation
 Stable release
 --------------
 
-To install TalkLocal Python, run this command in your terminal:
+To install TextLocal Python, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install talklocal_python
+    $ pip install textlocal_python
 
-This is the preferred method to install TalkLocal Python, as it will always install the most recent stable release.
+This is the preferred method to install TextLocal Python, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -26,19 +26,19 @@ you through the process.
 From sources
 ------------
 
-The sources for TalkLocal Python can be downloaded from the `Github repo`_.
+The sources for TextLocal Python can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/the-proceduretalklocal_python
+    $ git clone git://github.com/the-proceduretextlocal_python
 
 Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/the-procedure/talklocal_python/tarball/master
+    $ curl  -OL https://github.com/the-procedure/textlocal_python/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/the-procedure/talklocal_python
-.. _tarball: https://github.com/the-procedure/talklocal_python/tarball/master
+.. _Github repo: https://github.com/the-procedure/textlocal_python
+.. _tarball: https://github.com/the-procedure/textlocal_python/tarball/master

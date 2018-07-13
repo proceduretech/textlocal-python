@@ -36,7 +36,7 @@ setup(
     include_package_data=True,
     keywords='textlocal-pro',
     name='textlocal-pro',
-    packages=find_packages(include=['textlocal-pro']),
+    packages=find_packages(include=['textlocal_python']),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

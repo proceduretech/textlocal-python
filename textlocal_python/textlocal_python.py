@@ -28,7 +28,7 @@ class TextLocalClient():
 
         params = {'apikey': self.apikey, 'numbers': numbers, 'message': message}
 
-        if not sender is None:
+        if sender is not None:
             params['sender'] = sender
 
         if test:

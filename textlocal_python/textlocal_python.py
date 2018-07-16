@@ -2,6 +2,8 @@
 
 """Text Local Main module."""
 
+import logging
+
 from  textlocal_python.http_client import send_http_request
 
 
@@ -13,8 +15,12 @@ class TextLocalClient():
     getScheduledMessagesAPI = 'https://api.textlocal.in/get_scheduled/'
     shortUrlAPI = 'https://api.textlocal.in/create_shorturl/'
     cancelScheduledMessagesAPI = 'https://api.textlocal.in/cancel_scheduled/'
+    getBalanceAPI = 'https://api.textlocal.in/balance/'
 
     def __init__(self, apikey):
+        if apikey is None:
+            logging.error('No API Key was provided')
+            return
         self.apikey = apikey
 
     def send_message(self, numbers, message, sender=None, test=False):
@@ -64,15 +70,16 @@ class TextLocalClient():
 
     def get_cost(self, numbers, message, sender=None):
         """Gets cost of particular message or messages"""
-
-        response, code, headers = self.send_message(numbers, message, sender, True)
-        if response['status'] is 'success':
-            return response['code']
-
-        return response, code, headers
+        return self.send_message(numbers, message, sender, True)
 
     def create_short_url(self, url):
         """Creates short url"""
 
         params = {'apikey': self.apikey, 'url': url}
         return send_http_request(self.shortUrlAPI, params, 'post')
+
+    def get_balance(self):
+        """Gets credits for api"""
+
+        params = {'apikey': self.apikey}
+        return send_http_request(self.getBalanceAPI, params, 'post')
